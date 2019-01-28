@@ -47,7 +47,8 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]); //jshint ignore: line
 
 let nav = document.querySelectorAll("a");
-console.log(nav);
+//console.log(nav);
+
 nav[0].textContent = siteContent.nav["nav-item-1"];
 
 nav[1].textContent = siteContent.nav["nav-item-2"];
@@ -82,7 +83,7 @@ const topSecondP = document.querySelectorAll(
   ".main-content .top-content:nth-child(1) p"
 );
 
-console.log(topSecondP);
+//console.log(topSecondP);
 
 topSecondHeader[1].textContent = siteContent["main-content"]["about-h4"];
 
@@ -101,6 +102,52 @@ const bottomP = document.querySelector(".bottom-content .text-content p");
 bottomHeading.textContent = siteContent["main-content"]["services-h4"];
 
 bottomP.textContent = siteContent["main-content"]["services-content"];
+
+const bottomSecondHeading = document.querySelectorAll(
+  ".bottom-content .text-content:nth-child(2) h4"
+);
+
+const bottomSecondP = document.querySelectorAll(
+  ".bottom-content .text-content:nth-child(2) p"
+);
+//console.log(bottomSecondHeading);
+
+bottomSecondHeading[0].textContent = siteContent["main-content"]["product-h4"];
+
+bottomSecondP[0].textContent = siteContent["main-content"]["product-content"];
+
+const bottomThirdHeading = document.querySelectorAll(
+  ".bottom-content .text-content:nth-child(3) h4"
+);
+//console.log(bottomThirdHeading);
+
+bottomThirdHeading[0].textContent = siteContent["main-content"]["vision-h4"];
+
+const bottomThirdP = document.querySelectorAll(
+  ".bottom-content .text-content:nth-child(3) p"
+);
+
+bottomThirdP[0].textContent = siteContent["main-content"]["vision-content"];
+
+const contactHeading = document.querySelector(".contact h4");
+
+contactHeading.textContent = siteContent.contact["contact-h4"];
+
+const contactAddress = document.querySelector(".contact p");
+
+contactAddress.textContent = siteContent.contact.address;
+
+const contactSection = document.querySelectorAll(".contact p");
+//console.log(contactSection);
+
+contactSection[1].textContent = siteContent.contact.phone;
+
+contactSection[2].textContent = siteContent.contact.email;
+
+const footerP = document.querySelector("footer p");
+console.log(footerP);
+
+footerP.textContent = siteContent.footer.copyright;
 
 //topSecondHeader.lastChild = siteContent["main-content"]["about-h4"];
 
