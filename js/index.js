@@ -61,6 +61,22 @@ nav[4].textContent = siteContent.nav["nav-item-5"];
 
 nav[5].textContent = siteContent.nav["nav-item-6"];
 
+const greenATags = document.querySelectorAll("nav a");
+//console.log(greenATags);
+
+greenATags.forEach(e => (e.style.color = "green"));
+
+const navArea = document.querySelector("nav");
+const newA = document.createElement("a");
+newA.textContent = "New Item";
+newA.style.color = "green";
+navArea.appendChild(newA);
+
+const newB = document.createElement("a");
+newB.textContent = "Beg New Item";
+newB.style.color = "green";
+navArea.prepend(newB);
+
 const ctaText = document.querySelector("h1");
 const ctaImg = document.querySelector("#cta-img");
 const ctaBtn = document.querySelector(".cta button");
@@ -145,7 +161,7 @@ contactSection[1].textContent = siteContent.contact.phone;
 contactSection[2].textContent = siteContent.contact.email;
 
 const footerP = document.querySelector("footer p");
-console.log(footerP);
+//console.log(footerP);
 
 footerP.textContent = siteContent.footer.copyright;
 
