@@ -68,6 +68,42 @@ ctaText.textContent = siteContent.cta["h1"];
 ctaImg.src = siteContent.cta["img-src"];
 ctaBtn.textContent = siteContent.cta["button"];
 
+const topTextHeader = document.querySelector(".text-content h4");
+const topTextP = document.querySelector(".text-content p");
+
+topTextHeader.textContent = siteContent["main-content"]["features-h4"];
+topTextP.textContent = siteContent["main-content"]["features-content"];
+
+const topSecondHeader = document.querySelectorAll(
+  ".main-content .top-content:nth-child(1) h4"
+);
+
+const topSecondP = document.querySelectorAll(
+  ".main-content .top-content:nth-child(1) p"
+);
+
+console.log(topSecondP);
+
+topSecondHeader[1].textContent = siteContent["main-content"]["about-h4"];
+
+topSecondP[1].textContent = siteContent["main-content"]["about-content"];
+
+const midImg = document.querySelector("#middle-img");
+
+midImg.src = siteContent["main-content"]["middle-img-src"];
+
+const bottomHeading = document.querySelector(
+  ".bottom-content .text-content h4"
+);
+
+const bottomP = document.querySelector(".bottom-content .text-content p");
+
+bottomHeading.textContent = siteContent["main-content"]["services-h4"];
+
+bottomP.textContent = siteContent["main-content"]["services-content"];
+
+//topSecondHeader.lastChild = siteContent["main-content"]["about-h4"];
+
 //const servContent = siteContent.nav["nav-item-1"];
 //console.log(servContent);
 //let services = document.querySelector("a");
