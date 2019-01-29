@@ -173,3 +173,22 @@ footerP.textContent = siteContent.footer.copyright;
 //services.textContent = servContent;
 
 //const product = document.querySelector()
+//
+
+const footer = document.querySelector("footer");
+const newBtn = document.createElement("button");
+newBtn.textContent = "Toggle";
+footer.appendChild(newBtn);
+newBtn.style.marginTop = "10px";
+newBtn.style.width = "100px";
+newBtn.style.background = "hotpink";
+newBtn.style.color = "aqua";
+navArea.prepend(newB);
+
+newBtn.addEventListener("click", function() {
+  newBtn.style.background = "darkorchid";
+});
+
+function toggleMe() {
+  this.classList.toggle("newBtn");
+}
